@@ -3,12 +3,12 @@
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 
-plugins=()
+# plugins=()
 
 ##########
 # NATIVE #
 ##########
-plugins+=(git)
+# plugins+=(git)
 # plugins+=(git-extra-commands)
 # plugins+=(colored-man-pages-mod)
 

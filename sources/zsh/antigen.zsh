@@ -18,15 +18,17 @@ antigen bundle zdharma/fast-syntax-highlighting
 # CUSTOM PLUGINS #
 ##################
 
+antigen bundle git
+
 # Desc:   Open a git project or file on GitHub
 # Repo:   https://github.com/peterhurford/git-it-on.zsh
 # Usage: `gitit` <item>
-antigen bundle peterhurford/git-it-on.zsh
+# antigen bundle peterhurford/git-it-on.zsh
 
 # Desc:   Git helper script compilation
 # Repo:   https://github.com/unixorn/git-extra-commands
 # Usage:  See Documentation
-antigen bundle unixorn/git-extra-commands
+# antigen bundle unixorn/git-extra-commands
 
 # Desc:   Change iTerm tab color based on `pwd`
 # Repo:   https://github.com/tysonwolker/iterm-tab-colors
