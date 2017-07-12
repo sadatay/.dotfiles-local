@@ -6,9 +6,17 @@
 
 # General
 alias rs='redis-server &'
-alias top='htop'
 alias weather='curl wttr.in/Austin'
 alias dotfiles='~/.dotfiles/install'
+
+# Overrides
+alias readlink='greadlink'
+alias top='htop'
+
+# Misc
+alias wakeshaggy='curl https://downwiththeclown-bot-lita.herokuapp.com/heroku/keepalive'
+alias lightsout='curl -H "Content-Type: application/json" -X POST -d '"'"'{"on": false}'"'"' http://192.168.7.88/api/WJ-sacIjRxPL4hfhJKORLcd9TRZQlfELd5m9lYUg/groups/0/action'
+alias lightson='curl -H "Content-Type: application/json" -X POST -d '"'"'{"on": true}'"'"' http://192.168.7.88/api/WJ-sacIjRxPL4hfhJKORLcd9TRZQlfELd5m9lYUg/groups/0/action'
 
 # Development
 
@@ -36,6 +44,7 @@ alias git='hub'
 alias ggraph="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)-                     %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
 alias branches='git branch -vvvv'
 alias bs='branches'
+alias gc='git-commander'
 
 ## These should be overridden based on environment
 alias rebase-upstream-master='git remote update && git rebase -i upstream/master'

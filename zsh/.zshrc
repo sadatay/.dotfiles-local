@@ -32,3 +32,6 @@ source ~/.themes/joe.zsh-theme
 # duplicates of a line previously found, even if the duplicates are not
 # contiguous.
 setopt hist_find_no_dups
+
+# added by travis gem
+[ -f /Users/josephlasala/.travis/travis.sh ] && source /Users/josephlasala/.travis/travis.sh
