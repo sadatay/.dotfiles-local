@@ -1,0 +1,1 @@
+("~/.dotfiles/" "~/code/folio/ui-eholdings/" "~/code/altschool/Slate/")

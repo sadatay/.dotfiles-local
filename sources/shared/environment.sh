@@ -11,3 +11,5 @@ export PATH=/usr/local/bin:$PATH
 export PATH="$PATH:$HOME/.rvm/bin"
 
 source ~/.nvm/nvm.sh
+
+export GITHUB_TOKEN='67eda35c0cb6804cee06894b47f919dd2c03ae99'

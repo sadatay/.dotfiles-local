@@ -17,6 +17,7 @@ alias top='htop'
 alias wakeshaggy='curl https://downwiththeclown-bot-lita.herokuapp.com/heroku/keepalive'
 alias lightsout='curl -H "Content-Type: application/json" -X POST -d '"'"'{"on": false}'"'"' http://192.168.7.88/api/WJ-sacIjRxPL4hfhJKORLcd9TRZQlfELd5m9lYUg/groups/0/action'
 alias lightson='curl -H "Content-Type: application/json" -X POST -d '"'"'{"on": true}'"'"' http://192.168.7.88/api/WJ-sacIjRxPL4hfhJKORLcd9TRZQlfELd5m9lYUg/groups/0/action'
+alias dock-add-space='defaults write com.apple.dock persistent-apps -array-add '"'"'{tile-data={}; tile-type="spacer-tile";}'"'"''
 
 # Development
 

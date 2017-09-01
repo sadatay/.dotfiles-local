@@ -35,3 +35,10 @@ setopt hist_find_no_dups
 
 # added by travis gem
 [ -f /Users/josephlasala/.travis/travis.sh ] && source /Users/josephlasala/.travis/travis.sh
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/josephlasala/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/josephlasala/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/josephlasala/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/josephlasala/google-cloud-sdk/completion.zsh.inc'; fi
+export PATH="/usr/local/sbin:$PATH"
