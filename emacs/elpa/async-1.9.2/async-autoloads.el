@@ -3,8 +3,9 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "async" "async.el" (22947 28924 0 0))
-;;; Generated autoloads from async.el
+;;;### (autoloads nil "async" "../../../../.emacs.d/elpa/async-1.9.2/async.el"
+;;;;;;  "4c97826e33dbf88092a2923e298f91db")
+;;; Generated autoloads from ../../../../.emacs.d/elpa/async-1.9.2/async.el
 
 (autoload 'async-start-process "async" "\
 Start the executable PROGRAM asynchronously.  See `async-start'.
@@ -68,9 +69,9 @@ returns nil.  It can still be useful, however, as an argument to
 
 ;;;***
 
-;;;### (autoloads nil "async-bytecomp" "async-bytecomp.el" (22947
-;;;;;;  28924 0 0))
-;;; Generated autoloads from async-bytecomp.el
+;;;### (autoloads nil "async-bytecomp" "../../../../.emacs.d/elpa/async-1.9.2/async-bytecomp.el"
+;;;;;;  "c3f92425d089a0a8527673e0882c2fb5")
+;;; Generated autoloads from ../../../../.emacs.d/elpa/async-1.9.2/async-bytecomp.el
 
 (autoload 'async-byte-recompile-directory "async-bytecomp" "\
 Compile all *.el files in DIRECTORY asynchronously.
@@ -97,9 +98,9 @@ Async compilation of packages can be controlled by
 
 ;;;***
 
-;;;### (autoloads nil "dired-async" "dired-async.el" (22947 28924
-;;;;;;  0 0))
-;;; Generated autoloads from dired-async.el
+;;;### (autoloads nil "dired-async" "../../../../.emacs.d/elpa/async-1.9.2/dired-async.el"
+;;;;;;  "ea39a957a7db26e4d92d36a16f7884e2")
+;;; Generated autoloads from ../../../../.emacs.d/elpa/async-1.9.2/dired-async.el
 
 (defvar dired-async-mode nil "\
 Non-nil if Dired-Async mode is enabled.
@@ -118,8 +119,11 @@ Do dired actions asynchronously.
 
 ;;;***
 
-;;;### (autoloads nil nil ("async-pkg.el" "smtpmail-async.el") (22947
-;;;;;;  28924 0 0))
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/async-1.9.2/async-autoloads.el"
+;;;;;;  "../../../../.emacs.d/elpa/async-1.9.2/async-bytecomp.el"
+;;;;;;  "../../../../.emacs.d/elpa/async-1.9.2/async-pkg.el" "../../../../.emacs.d/elpa/async-1.9.2/async.el"
+;;;;;;  "../../../../.emacs.d/elpa/async-1.9.2/dired-async.el" "../../../../.emacs.d/elpa/async-1.9.2/smtpmail-async.el")
+;;;;;;  (22956 52744 0 0))
 
 ;;;***
 

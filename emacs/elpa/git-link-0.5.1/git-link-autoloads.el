@@ -3,8 +3,9 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "git-link" "git-link.el" (22947 28934 0 0))
-;;; Generated autoloads from git-link.el
+;;;### (autoloads nil "git-link" "../../../../.emacs.d/elpa/git-link-0.5.1/git-link.el"
+;;;;;;  "49065712b5c92caf76445b2e7ad669e1")
+;;; Generated autoloads from ../../../../.emacs.d/elpa/git-link-0.5.1/git-link.el
 
 (autoload 'git-link "git-link" "\
 Create a URL representing the current buffer's location in its
@@ -33,6 +34,12 @@ The URL will be added to the kill ring.  If `git-link-open-in-browser'
 is non-nil also call `browse-url'.
 
 \(fn REMOTE)" t nil)
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/git-link-0.5.1/git-link-autoloads.el"
+;;;;;;  "../../../../.emacs.d/elpa/git-link-0.5.1/git-link.el") (22956
+;;;;;;  52754 0 0))
 
 ;;;***
 

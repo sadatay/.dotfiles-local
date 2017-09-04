@@ -3,9 +3,9 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "comment-dwim-2" "comment-dwim-2.el" (22947
-;;;;;;  28902 0 0))
-;;; Generated autoloads from comment-dwim-2.el
+;;;### (autoloads nil "comment-dwim-2" "../../../../.emacs.d/elpa/comment-dwim-2-1.2.2/comment-dwim-2.el"
+;;;;;;  "f14f2aba94cf8663371ae0ef6ed7797e")
+;;; Generated autoloads from ../../../../.emacs.d/elpa/comment-dwim-2-1.2.2/comment-dwim-2.el
 
 (autoload 'comment-dwim-2 "comment-dwim-2" "\
 Call a comment command according to the context.
@@ -25,6 +25,12 @@ encountering an inline comment can be customized. Setting
 will swap (1) and (2).
 
 \(fn &optional ARG)" t nil)
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/comment-dwim-2-1.2.2/comment-dwim-2-autoloads.el"
+;;;;;;  "../../../../.emacs.d/elpa/comment-dwim-2-1.2.2/comment-dwim-2.el")
+;;;;;;  (22956 52726 0 0))
 
 ;;;***
 

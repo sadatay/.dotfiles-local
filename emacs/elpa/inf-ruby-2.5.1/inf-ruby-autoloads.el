@@ -3,8 +3,9 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "inf-ruby" "inf-ruby.el" (22947 28898 0 0))
-;;; Generated autoloads from inf-ruby.el
+;;;### (autoloads nil "inf-ruby" "../../../../.emacs.d/elpa/inf-ruby-2.5.1/inf-ruby.el"
+;;;;;;  "577d1bb844229c2c76ea4270de9054a5")
+;;; Generated autoloads from ../../../../.emacs.d/elpa/inf-ruby-2.5.1/inf-ruby.el
 
 (defvar ruby-source-modes '(ruby-mode enh-ruby-mode) "\
 Used to determine if a buffer contains Ruby source code.
@@ -100,6 +101,12 @@ Run custom console.rb, Pry, or bundle console, in DIR.
 
 \(fn FILE REGEXP &optional MATCH-GROUP)" nil nil)
  (dolist (mode ruby-source-modes) (add-hook (intern (format "%s-hook" mode)) 'inf-ruby-minor-mode))
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/inf-ruby-2.5.1/inf-ruby-autoloads.el"
+;;;;;;  "../../../../.emacs.d/elpa/inf-ruby-2.5.1/inf-ruby.el") (22956
+;;;;;;  52721 0 0))
 
 ;;;***
 

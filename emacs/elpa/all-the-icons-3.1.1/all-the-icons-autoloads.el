@@ -3,9 +3,9 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "all-the-icons" "all-the-icons.el" (22947 28956
-;;;;;;  0 0))
-;;; Generated autoloads from all-the-icons.el
+;;;### (autoloads nil "all-the-icons" "../../../../.emacs.d/elpa/all-the-icons-3.1.1/all-the-icons.el"
+;;;;;;  "29fd97152a8c5b1ccf96a771aff05e1e")
+;;; Generated autoloads from ../../../../.emacs.d/elpa/all-the-icons-3.1.1/all-the-icons.el
 
 (autoload 'all-the-icons-icon-for-file "all-the-icons" "\
 Get the formatted icon for FILE.
@@ -46,8 +46,11 @@ When FAMILY is non-nil, limit the candidates to the icon set matching it.
 
 ;;;***
 
-;;;### (autoloads nil nil ("all-the-icons-faces.el" "all-the-icons-pkg.el")
-;;;;;;  (22947 28956 0 0))
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/all-the-icons-3.1.1/all-the-icons-autoloads.el"
+;;;;;;  "../../../../.emacs.d/elpa/all-the-icons-3.1.1/all-the-icons-faces.el"
+;;;;;;  "../../../../.emacs.d/elpa/all-the-icons-3.1.1/all-the-icons-pkg.el"
+;;;;;;  "../../../../.emacs.d/elpa/all-the-icons-3.1.1/all-the-icons.el")
+;;;;;;  (22956 52770 0 0))
 
 ;;;***
 

@@ -3,7 +3,9 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil nil ("font-lock+.el") (22947 28955 0 0))
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/font-lock+-20170222.1755/font-lock+-autoloads.el"
+;;;;;;  "../../../../.emacs.d/elpa/font-lock+-20170222.1755/font-lock+.el")
+;;;;;;  (22956 52769 0 0))
 
 ;;;***
 

@@ -3,9 +3,9 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "counsel-projectile" "counsel-projectile.el"
-;;;;;;  (22947 28922 0 0))
-;;; Generated autoloads from counsel-projectile.el
+;;;### (autoloads nil "counsel-projectile" "../../../../.emacs.d/elpa/counsel-projectile-20170816.200/counsel-projectile.el"
+;;;;;;  "64e1062534479e8973fd33092627be26")
+;;; Generated autoloads from ../../../../.emacs.d/elpa/counsel-projectile-20170816.200/counsel-projectile.el
 
 (autoload 'counsel-projectile-find-file "counsel-projectile" "\
 Jump to a project's file using completion.
@@ -65,6 +65,12 @@ Turn on counsel-projectile key bindings.
 Turn off counsel-projectile key bindings.
 
 \(fn)" t nil)
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/counsel-projectile-20170816.200/counsel-projectile-autoloads.el"
+;;;;;;  "../../../../.emacs.d/elpa/counsel-projectile-20170816.200/counsel-projectile.el")
+;;;;;;  (22956 52743 0 0))
 
 ;;;***
 

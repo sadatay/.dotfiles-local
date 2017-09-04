@@ -11,20 +11,12 @@
 ;; load path configuration
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
 
-;; custom config
-(require 'init-elpa)
+;; Require `use-package`
+(unless (package-installed-p 'use-package)
+  (package-refresh-contents)
+  (package-install 'use-package))
 
-;; load configs for specific features and modes
-(require 'init-ui)
-(require 'init-editing)
-(require 'init-navigation)
-(require 'init-modeline)
-(require 'init-git)
-(require 'init-window)
-(require 'init-projects)
-
-;; language specific configs
-(require 'lang-javascript)
-
-;; provide this module
-(provide 'init)
+(eval-when-compile
+  (require 'use-package))
+(require 'diminish)
+(require 'bind-key)

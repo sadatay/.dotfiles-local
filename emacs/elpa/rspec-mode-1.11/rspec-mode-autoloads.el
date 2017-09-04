@@ -3,9 +3,9 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "rspec-mode" "rspec-mode.el" (22947 28897 0
-;;;;;;  0))
-;;; Generated autoloads from rspec-mode.el
+;;;### (autoloads nil "rspec-mode" "../../../../.emacs.d/elpa/rspec-mode-1.11/rspec-mode.el"
+;;;;;;  "398b18e0bc8390c05ea749d268810897")
+;;; Generated autoloads from ../../../../.emacs.d/elpa/rspec-mode-1.11/rspec-mode.el
 
 (autoload 'rspec-mode "rspec-mode" "\
 Minor mode for RSpec files
@@ -38,7 +38,10 @@ Returns true if the current buffer is a spec
 
 ;;;***
 
-;;;### (autoloads nil nil ("rspec-mode-pkg.el") (22947 28897 0 0))
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/rspec-mode-1.11/rspec-mode-autoloads.el"
+;;;;;;  "../../../../.emacs.d/elpa/rspec-mode-1.11/rspec-mode-pkg.el"
+;;;;;;  "../../../../.emacs.d/elpa/rspec-mode-1.11/rspec-mode.el")
+;;;;;;  (22956 52720 0 0))
 
 ;;;***
 

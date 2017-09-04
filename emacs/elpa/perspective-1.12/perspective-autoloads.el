@@ -3,9 +3,9 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "perspective" "perspective.el" (22948 25617
-;;;;;;  0 0))
-;;; Generated autoloads from perspective.el
+;;;### (autoloads nil "perspective" "../../../../.emacs.d/elpa/perspective-1.12/perspective.el"
+;;;;;;  "4ebc503b992d8a0b0da6f5aea75c4832")
+;;; Generated autoloads from ../../../../.emacs.d/elpa/perspective-1.12/perspective.el
 
 (defvar persp-mode nil "\
 Non-nil if Persp mode is enabled.
@@ -23,6 +23,12 @@ When active, keeps track of multiple 'perspectives',
 named collections of buffers and window configurations.
 
 \(fn &optional ARG)" t nil)
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/perspective-1.12/perspective-autoloads.el"
+;;;;;;  "../../../../.emacs.d/elpa/perspective-1.12/perspective.el")
+;;;;;;  (22956 52774 0 0))
 
 ;;;***
 

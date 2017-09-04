@@ -3,9 +3,9 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "persp-projectile" "persp-projectile.el" (22948
-;;;;;;  25617 0 0))
-;;; Generated autoloads from persp-projectile.el
+;;;### (autoloads nil "persp-projectile" "../../../../.emacs.d/elpa/persp-projectile-0.2.0/persp-projectile.el"
+;;;;;;  "edd478a5adb19f4fa19b98e739d7ea31")
+;;; Generated autoloads from ../../../../.emacs.d/elpa/persp-projectile-0.2.0/persp-projectile.el
 
 (autoload 'projectile-persp-switch-project "persp-projectile" "\
 Switch to a project or perspective we have visited before.
@@ -19,6 +19,12 @@ existing perspective of the project unless we're already in that
 perspective.
 
 \(fn PROJECT-TO-SWITCH)" t nil)
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/persp-projectile-0.2.0/persp-projectile-autoloads.el"
+;;;;;;  "../../../../.emacs.d/elpa/persp-projectile-0.2.0/persp-projectile.el")
+;;;;;;  (22956 52775 0 0))
 
 ;;;***
 

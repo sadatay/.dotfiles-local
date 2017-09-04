@@ -3,13 +3,20 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "web-mode" "web-mode.el" (22947 28785 0 0))
-;;; Generated autoloads from web-mode.el
+;;;### (autoloads nil "web-mode" "../../../../.emacs.d/elpa/web-mode-15/web-mode.el"
+;;;;;;  "8c32ea030f6de5985b632efa6059a594")
+;;; Generated autoloads from ../../../../.emacs.d/elpa/web-mode-15/web-mode.el
 
 (autoload 'web-mode "web-mode" "\
 Major mode for editing web templates.
 
 \(fn)" t nil)
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/web-mode-15/web-mode-autoloads.el"
+;;;;;;  "../../../../.emacs.d/elpa/web-mode-15/web-mode.el") (22956
+;;;;;;  52678 0 0))
 
 ;;;***
 

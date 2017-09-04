@@ -3,9 +3,9 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "frame-cmds" "frame-cmds.el" (22947 28905 0
-;;;;;;  0))
-;;; Generated autoloads from frame-cmds.el
+;;;### (autoloads nil "frame-cmds" "../../../../.emacs.d/elpa/frame-cmds-20170819.1358/frame-cmds.el"
+;;;;;;  "c8beedcaa0db06392d3f3a3b24035a96")
+;;; Generated autoloads from ../../../../.emacs.d/elpa/frame-cmds-20170819.1358/frame-cmds.el
 
 (autoload 'save-frame-config "frame-cmds" "\
 Save current frame configuration.
@@ -488,6 +488,12 @@ If it is alone, do nothing.  Otherwise, delete it and create a new
 frame showing the same buffer.
 
 \(fn)" t nil)
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/frame-cmds-20170819.1358/frame-cmds-autoloads.el"
+;;;;;;  "../../../../.emacs.d/elpa/frame-cmds-20170819.1358/frame-cmds.el")
+;;;;;;  (22956 52730 0 0))
 
 ;;;***
 

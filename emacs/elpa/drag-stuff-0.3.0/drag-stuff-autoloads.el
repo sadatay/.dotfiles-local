@@ -3,9 +3,9 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "drag-stuff" "drag-stuff.el" (22947 28764 0
-;;;;;;  0))
-;;; Generated autoloads from drag-stuff.el
+;;;### (autoloads nil "drag-stuff" "../../../../.emacs.d/elpa/drag-stuff-0.3.0/drag-stuff.el"
+;;;;;;  "07bb19db860982e860fdedf949faaff9")
+;;; Generated autoloads from ../../../../.emacs.d/elpa/drag-stuff-0.3.0/drag-stuff.el
 
 (autoload 'drag-stuff-up "drag-stuff" "\
 Drag stuff ARG lines up.
@@ -66,7 +66,10 @@ See `drag-stuff-mode' for more information on Drag-Stuff mode.
 
 ;;;***
 
-;;;### (autoloads nil nil ("drag-stuff-pkg.el") (22947 28764 0 0))
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/drag-stuff-0.3.0/drag-stuff-autoloads.el"
+;;;;;;  "../../../../.emacs.d/elpa/drag-stuff-0.3.0/drag-stuff-pkg.el"
+;;;;;;  "../../../../.emacs.d/elpa/drag-stuff-0.3.0/drag-stuff.el")
+;;;;;;  (22956 52672 0 0))
 
 ;;;***
 

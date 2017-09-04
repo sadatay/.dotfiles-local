@@ -3,8 +3,9 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "zoom-frm" "zoom-frm.el" (22947 28906 0 0))
-;;; Generated autoloads from zoom-frm.el
+;;;### (autoloads nil "zoom-frm" "../../../../.emacs.d/elpa/zoom-frm-20170309.1439/zoom-frm.el"
+;;;;;;  "ebb97d2bb970de5f20cff60ce2d15094")
+;;; Generated autoloads from ../../../../.emacs.d/elpa/zoom-frm-20170309.1439/zoom-frm.el
 
 (let ((loads (get 'zoom 'custom-loads))) (if (member '"zoom-frm" loads) nil (put 'zoom 'custom-loads (cons '"zoom-frm" loads))))
 
@@ -46,6 +47,12 @@ Cancel zoom of FRAME.
 Alternately zoom/unzoom FRAME by `frame-zoom-font-difference'.
 
 \(fn &optional FRAME)" t nil)
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/zoom-frm-20170309.1439/zoom-frm-autoloads.el"
+;;;;;;  "../../../../.emacs.d/elpa/zoom-frm-20170309.1439/zoom-frm.el")
+;;;;;;  (22956 52730 0 0))
 
 ;;;***
 
