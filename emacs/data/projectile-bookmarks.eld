@@ -1,1 +1,0 @@
-("~/code/folio/ui-eholdings/" "~/.dotfiles/" "~/code/frontside/new.frontside.io/" "~/code/frontside/api/" "~/code/frontside/api/vendor/simplecast-rails/" "~/code/altschool/Slate/")
