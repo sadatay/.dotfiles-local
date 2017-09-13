@@ -7,16 +7,3 @@
 (package-initialize)
 
 (load (expand-file-name "init-frontmacs.el" user-emacs-directory))
-
-;; load path configuration
-(add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
-
-;; Require `use-package`
-(unless (package-installed-p 'use-package)
-  (package-refresh-contents)
-  (package-install 'use-package))
-
-(eval-when-compile
-  (require 'use-package))
-(require 'diminish)
-(require 'bind-key)

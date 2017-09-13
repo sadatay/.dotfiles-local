@@ -55,13 +55,3 @@
 
 ;; Unicode
 (set-language-environment "UTF-8")
-
-;; Indent Guide (Indentation Highlighting)
-(use-package indent-guide
-  :config
-    (indent-guide-global-mode))
-
-;; Rainbow delims
-(use-package rainbow-delimiters
-  :config
-    (add-hook 'prog-mode-hook 'rainbow-delimiters-mode))

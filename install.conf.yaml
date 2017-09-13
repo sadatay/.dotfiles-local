@@ -18,7 +18,6 @@
     ~/.antigen: antigen/.antigen
     ~/antigen.zsh: antigen/antigen/antigen.zsh
     ~/.bashrc: bash/.bashrc
-    ~/.bro: bro/.bro
     ~/.gitconfig: git/.gitconfig
     ~/.vim_runtime: vim
     ~/.zshrc: zsh/.zshrc
