@@ -18,4 +18,5 @@
   ;; Max/Full Shortcuts
   '(global-set-key (kbd "<s-return>") 'toggle-frame-maximized)
   '(global-set-key (kbd "<s-S-return>") 'toggle-frame-fullscreen)
+  (scroll-bar-mode -1)
 )
