@@ -100,30 +100,30 @@ if [ $? -ne 0 ]; then
   return 1
 fi
 
-transfer() { 
+transfer() {
     # check arguments
-    if [ $# -eq 0 ]; 
-    then 
+    if [ $# -eq 0 ];
+    then
         echo "No arguments specified. Usage:\necho transfer /tmp/test.md\ncat /tmp/test.md | transfer test.md"
         return 1
     fi
 
     # get temporarily filename, output is written to this file show progress can be showed
     tmpfile=$( mktemp -t transferXXX )
-    
+
     # upload stdin or file
     file=$1
 
-    if tty -s; 
-    then 
-        basefile=$(basename "$file" | sed -e 's/[^a-zA-Z0-9._-]/-/g') 
+    if tty -s;
+    then
+        basefile=$(basename "$file" | sed -e 's/[^a-zA-Z0-9._-]/-/g')
 
         if [ ! -e $file ];
         then
             echo "File $file doesn't exists."
             return 1
         fi
-        
+
         if [ -d $file ];
         then
             # zip directory and transfer
@@ -135,11 +135,11 @@ transfer() {
             # transfer file
             curl --progress-bar --upload-file "$file" "https://transfer.sh/$basefile" >> $tmpfile
         fi
-    else 
+    else
         # transfer pipe
         curl --progress-bar --upload-file "-" "https://transfer.sh/$file" >> $tmpfile
     fi
-   
+
     # cat output link
     cat $tmpfile
 
@@ -147,3 +147,27 @@ transfer() {
     rm -f $tmpfile
 }
 
+kubejump() {
+    if [ $# -eq 0 ]; then
+        echo "No search string provided."
+        echo "Usage:"
+        echo "kubejump [search_string]"
+        return 1
+    fi
+
+    pods="$(kubectl get pods | tail -n +2 | grep $1 | awk '{print $1}')"
+    if [ -z "$pods" ]; then
+        echo "No matching pods found"
+        return 1
+    fi
+
+    pod="$(echo $pods | head -n1)"
+    if [[ $pods == *$'\n'* ]]; then
+        echo "NOTE: Multiple pods matched your query (Defaulting to $pod):"
+        echo $pods; echo
+    fi
+
+    echo "Jumping into ${pod}..."; echo
+
+    kubectl exec -it ${pod} -- /bin/bash
+}

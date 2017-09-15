@@ -4,7 +4,7 @@
 (set-window-margins nil nil)
 
 ;; Font Settings
-(let ((font "Operator Mono Medium 10"))
+(let ((font "Operator Mono Medium 9"))
   (set-frame-font font)
   (add-to-list 'default-frame-alist
                `(font . ,font)))
@@ -47,11 +47,11 @@
 
   ;; use "Operator Mono" for cursive keywords
   (when (find-font (font-spec :name "Operator Mono"))
-    (set-face-attribute 'font-lock-builtin-face nil :family "Operator Mono" :italic t)
-    (set-face-attribute 'font-lock-constant-face nil :family "Operator Mono" :italic t)
-    (set-face-attribute 'font-lock-keyword-face nil :family "Operator Mono" :italic t)
-    (set-face-attribute 'font-lock-type-face nil :family "Operator Mono" :italic t)
-    (set-face-attribute 'font-lock-function-name-face nil :family "Operator Mono" :italic t)))
+    (set-face-attribute 'font-lock-builtin-face nil :family "Operator Mono Medium" :italic t)
+    (set-face-attribute 'font-lock-keyword-face nil :family "Operator Mono Medium" :italic t)))
+    ;; (set-face-attribute 'font-lock-constant-face nil :family "Operator Mono Medium" :italic t)
+    ;; (set-face-attribute 'font-lock-type-face nil :family "Operator Mono Medium" :italic t)
+    ;; (set-face-attribute 'font-lock-function-name-face nil :family "Operator Mono Medium" :italic t)))
 
 ;; Unicode
 (set-language-environment "UTF-8")
