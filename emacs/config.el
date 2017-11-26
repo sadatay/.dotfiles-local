@@ -1,6 +1,6 @@
 (custom-set-variables
   ;; Theme
-  ; '(frontmacs-theme 'ujelly)
+  '(load-theme 'alect-dark t)
 
   ;; Always download packages if absent
   '(use-package-always-ensure t)
@@ -15,8 +15,11 @@
   '(flycheck-disabled-checkers
     '(emacs-lisp-checkdoc))
 
-  ;; Max/Full Shortcuts
+  ;; Keybindings
   '(global-set-key (kbd "<s-return>") 'toggle-frame-maximized)
   '(global-set-key (kbd "<s-S-return>") 'toggle-frame-fullscreen)
-  (scroll-bar-mode -1)
+  '(global-set-key (kbd "C-'") 'toggle-quotes)
+
+  ;; Remember Open Buffers and Windows
+  ;; '(desktop-save-mode 1)
 )
