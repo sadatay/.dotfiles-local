@@ -2,4 +2,6 @@
 	name = Joe LaSala
 	email = joe@frontside.io
 [core]
-	editor = /usr/bin/vim
+	editor = /usr/local/bin/emacs
+[diff "sopsdiffer"]
+	textconv = sops -d

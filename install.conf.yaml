@@ -3,6 +3,7 @@
       relink: true
 - clean: ['~']
 - link:
+    ~/Brewfile: brew/Brewfile
     ~/.sources:
       create: true
       path: sources
@@ -21,8 +22,10 @@
     ~/.gitconfig: git/.gitconfig
     ~/.vim_runtime: vim
     ~/.zshrc: zsh/.zshrc
+    ~/.irbrc: ruby/.irbrc
 - shell:
-  # - [git submodule update --init --recursive, Installing submodules]
+  # - [brew bundle --file=~/.dotfiles/brew/Brewfile]
   - [sh ~/.vim_runtime/install_awesome_vimrc.sh, Installing vimrc]
   - [source ~/.bashrc, Sourcing Bash]
   - [source ~/.zshrc && antigen reset && source ~/.zshrc, Sourcing Zsh and Antigen]
+  # - [rvm import ~/.dotfiles/gemsets/global.gems]

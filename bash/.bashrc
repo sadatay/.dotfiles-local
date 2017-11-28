@@ -23,7 +23,3 @@ parse_git_branch() {
 }
 
 PS1="\[\e[00;31m\]\u@macbook:[\[\e[0m\]\[\e[00;34m\]\W\[\e[0m\]\[\e[00;31m\]]\[\e[0m\]\[\e[00;33m\]\$(parse_git_branch)\[\e[0m\]\[\e[00;31m\] -> \[\e[0m\]"
-
-
-# added by travis gem
-[ -f /Users/josephlasala/.travis/travis.sh ] && source /Users/josephlasala/.travis/travis.sh

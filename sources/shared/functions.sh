@@ -171,3 +171,52 @@ kubejump() {
 
     kubectl exec -it ${pod} -- /bin/bash
 }
+
+kubelog() {
+    if [ $# -eq 0 ]; then
+        echo "No container name provided."
+        echo "Usage:"
+        echo "$ kubelog [container_name]"
+        echo "Note: [container_name] must be exact or the command will fail.  Ex: 'folio-mod-login'"
+        return 1
+    fi
+
+    container="$1"
+
+    pods="$(kubectl get pods | tail -n +2 | grep $1 | awk '{print $1}')"
+    if [ -z "$pods" ]; then
+        echo "No matching pods found"
+        return 1
+    fi
+
+    pod="$(echo $pods | head -n1)"
+    if [[ $pods == *$'\n'* ]]; then
+        echo "NOTE: Multiple pods matched your query (Defaulting to $pod):"
+        echo $pods; echo
+    fi
+
+    echo "Tailing ${container} logs..."; echo
+    kubectl logs ${pod} ${container} -f
+}
+
+kubelocal() {
+    put_info "Starting minikube"
+    minikube start
+
+    put_info "Using VM docker-env"
+    eval $(minikube docker-env)
+
+    put_info "Connected to local cluster:"
+    kubectl get all
+}
+
+kubeprod() {
+    put_info "Authenticating to gcloud (this can sometimes take a while)"
+    gcloud container clusters get-credentials okapi-demo --zone us-east1-b --project okapi-173322
+
+    put_info "Proxying to okapi cluster"
+    $(kubectl proxy &)
+
+    put_info "Connected to okapi cluster:"
+    kubectl get all
+}

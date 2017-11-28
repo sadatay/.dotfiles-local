@@ -12,6 +12,8 @@ alias dotfiles='~/.dotfiles/install'
 # Overrides
 alias readlink='greadlink'
 alias top='htop'
+alias cat='ccat'
+alias ls='k'
 
 # Misc
 alias wakeshaggy='curl https://downwiththeclown-bot-lita.herokuapp.com/heroku/keepalive'
@@ -20,6 +22,9 @@ alias lightson='curl -H "Content-Type: application/json" -X POST -d '"'"'{"on": 
 alias dock-add-space='defaults write com.apple.dock persistent-apps -array-add '"'"'{tile-data={}; tile-type="spacer-tile";}'"'"''
 
 # Development
+
+## Tools
+alias e='emacsclient -t --alternate-editor='
 
 ## Javascript
 
@@ -46,6 +51,7 @@ alias ggraph="git log --graph --abbrev-commit --decorate --format=format:'%C(bol
 alias branches='git branch -vvvv'
 alias bs='branches'
 alias gc='git-commander'
+alias master-parity='git remote update && git reset --hard origin/master'
 
 ## These should be overridden based on environment
 alias rebase-upstream-master='git remote update && git rebase -i upstream/master'
@@ -54,4 +60,3 @@ alias fixup-upstream-master='git commit -m "fixup" && rebase-upstream'
 alias fixup-origin-master='git commit -m "fixup" && rebase-origin'
 alias track-origin-master='git branch -u origin/master'
 alias track-upstream-master='git branch -u upstream/master'
-

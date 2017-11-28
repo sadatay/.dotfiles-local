@@ -33,12 +33,12 @@ antigen bundle git
 # Desc:   Change iTerm tab color based on `pwd`
 # Repo:   https://github.com/tysonwolker/iterm-tab-colors
 # Usage:  None
-antigen bundle tysonwolker/iterm-tab-colors
+# antigen bundle tysonwolker/iterm-tab-colors
 
 # Desc:   Show CI build status in prompt
 # Repo:   https://github.com/raymondjcox/hub-ci-zsh-plugin
-# Usage:  Use $(hub_ci_status) in prompt definition.  
-#         Customizable with constants: 
+# Usage:  Use $(hub_ci_status) in prompt definition.
+#         Customizable with constants:
 #         $ZSH_THEME_HUB_CI_PROMPT_{SUCCESS | PENDING | FAIL | NO_STATUS}
 antigen bundle raymondjcox/hub-ci-zsh-plugin
 
@@ -58,7 +58,7 @@ antigen bundle gko/listbox
 #         `sp $name` - search for project and open
 #         `spo $name` - search for project and open parent dir
 #         `spcd $name` - search for project and `cd` to parent dir
-antigen bundle david-treblig/locate-sublime-projects-cli
+# antigen bundle david-treblig/locate-sublime-projects-cli
 
 # Desc:   Adds `lj` command for logging shell scripts
 # Repo:   https://github.com/molovo/lumberjack
@@ -71,7 +71,7 @@ antigen bundle molovo/lumberjack
 # Usage:  `revolver start <message>`
 #         `revolver update <message>`
 #         `revolver stop`
-antigen bundle molovo/revolver
+# antigen bundle molovo/revolver
 
 # Desc:   Colorized manpages for solarized theme
 # Repo:   https://github.com/zlsun/solarized-man
@@ -106,12 +106,17 @@ antigen bundle peterhurford/up.zsh
 # Desc:   Open pull request against upstream or origin master
 # Repo:   https://github.com/caarlos0/zsh-open-pr
 # Usage:  `git open-pr` after a push
-antigen bundle caarlos0/zsh-open-pr
+# antigen bundle caarlos0/zsh-open-pr
 
 # Desc:   Higher order functions (lambdas) for zsh
 # Repo:   https://github.com/Tarrasch/zsh-functional
 # Usage:  See Documentation
-antigen bundle Tarrasch/zsh-functional
+# antigen bundle Tarrasch/zsh-functional
+
+# Desc:   k8s completions
+# Repo:   https://github.com/zsh-users/zsh-completions
+# Usage:  none
+antigen bundle zsh-users/zsh-completions
 
 ##################
 # BROKEN PLUGINS #
@@ -129,5 +134,3 @@ antigen bundle Tarrasch/zsh-functional
 # antigen bundle chrissicool/zsh-bash # better bash backwards compatibility
 # antigen theme iam4x/zsh-iterm-touchbar
 # antigen bundle AlexisBRENON/oh-my-zsh-reminder
-
-
