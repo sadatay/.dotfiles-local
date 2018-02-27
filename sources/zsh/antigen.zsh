@@ -12,13 +12,11 @@ antigen bundle zdharma/fast-syntax-highlighting
 # NATIVE PLUGINS #
 ##################
 
-# None for now
+antigen bundle git
 
 ##################
 # CUSTOM PLUGINS #
 ##################
-
-antigen bundle git
 
 # Desc:   Open a git project or file on GitHub
 # Repo:   https://github.com/peterhurford/git-it-on.zsh

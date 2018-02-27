@@ -13,7 +13,7 @@ alias dotfiles='~/.dotfiles/install'
 alias readlink='greadlink'
 alias top='htop'
 alias cat='ccat'
-alias ls='k'
+alias ls='k -Ah'
 
 # Misc
 alias wakeshaggy='curl https://downwiththeclown-bot-lita.herokuapp.com/heroku/keepalive'
@@ -22,6 +22,15 @@ alias lightson='curl -H "Content-Type: application/json" -X POST -d '"'"'{"on": 
 alias dock-add-space='defaults write com.apple.dock persistent-apps -array-add '"'"'{tile-data={}; tile-type="spacer-tile";}'"'"''
 
 # Development
+
+## System
+alias cpu='htop --sort-key=PERCENT_CPU'
+alias mem='htop --sort-key=M_SIZE'
+alias psgrep="ps -Aco pid,comm | sed 's/^ *//'| sed 's/:/ /'|grep -iE"
+alias pbgist="jist -Ppo"
+alias killit='kill -9 %%'
+alias cpwd='pwd | pbcopy'
+alias diskspace="du -S | sort -n -r |less"
 
 ## Tools
 alias e='emacsclient -t --alternate-editor='

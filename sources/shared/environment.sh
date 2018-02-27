@@ -2,13 +2,6 @@
 # ENVIRONMENT SETTINGS #
 ########################
 
-# load RVM into a shell session *as a function*
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-export PATH=/usr/local/bin:$PATH
-
-
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
 
 # Initialize NVM
 source ~/.nvm/nvm.sh
@@ -40,3 +33,11 @@ PERL_MM_OPT="INSTALL_BASE=/Users/josephlasala/perl5"; export PERL_MM_OPT;
 export EDITOR=/usr/local/bin/emacsclient
 export VISUAL=/usr/local/bin/emacsclient
 export ALTERNATE_EDITOR=/usr/local/bin/emacs
+
+# load RVM into a shell session *as a function*
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+export PATH=/usr/local/bin:$PATH
+
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"

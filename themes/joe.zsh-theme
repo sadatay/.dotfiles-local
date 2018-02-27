@@ -31,7 +31,6 @@ function get_right_prompt() {
 
 function get_sha() {
     if git rev-parse --git-dir > /dev/null 2>&1; then
-        # echo -n "%{$fg[cyan]%}#%{$reset_color%}$(git_prompt_short_sha)%{$fg[cyan]%}#%{$reset_color%}"
         echo -n "%{$fg[cyan]%}$(git_prompt_short_sha)%{$reset_color%}"
     else
         echo -n ""
@@ -61,23 +60,21 @@ function lines_removed() {
 }
 
 function diff_info() {
-  echo "%{$fg[yellow]%}⟅✴ $(files_changed)⟆ %{$fg[green]%}⟅↑ $(lines_added)⟆ %{$fg[red]%}⟅↓ $(lines_removed)⟆%{$reset_color%}"
+  # echo "%{$fg[yellow]%}⟅✴ $(files_changed)⟆ %{$fg[green]%}⟅↑ $(lines_added)⟆ %{$fg[red]%}⟅↓ $(lines_removed)⟆%{$reset_color%}"
+  echo "%{$fg[yellow]%}[$(files_changed)]%{$fg[green]%}[$(lines_added)]%{$fg[red]%}[$(lines_removed)]%{$reset_color%}"
 }
 
 
 
 PROMPT='
 ${LAMBDA}\
- %{$fg_no_bold[red]%}‹ %{$fg[yellow]%}josephlasala@macbook %{$fg[red]%}›\
+ %{$fg_no_bold[red]%}‹ %{$fg[yellow]%}macbook %{$fg[red]%}›\
  %{$fg_no_bold[red]%}[%{$reset_color%} %3~ %{$fg[red]%}]\
  $(check_git_prompt_info)\
 %{$reset_color%}'
 
-# RPROMPT='$(get_right_prompt)'
 
 # Format for git_prompt_info()
-#ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[blue]%}« %{$fg[magenta]%}∫ "
-#ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%} %{$fg[blue]%}»"
 ZSH_THEME_GIT_PROMPT_DIRTY=""
 ZSH_THEME_GIT_PROMPT_CLEAN=""
 ZSH_THEME_GIT_PROMPT_PREFIX=""

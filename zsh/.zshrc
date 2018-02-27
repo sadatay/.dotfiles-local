@@ -2,23 +2,23 @@
 # CUSTOM CONFIGURATION #
 ########################
 
-# Antigen
+# Antigen Setup
 ANTIGEN_LOG=~/.antigen.log
 source $HOME/antigen.zsh
 antigen use oh-my-zsh
 
-# Dotfiles
 
-## Shared
+# Shared Dotfiles
 for file in ~/.sources/shared/*.sh; do
     source "$file"
 done
 
-## zsh specific
+# `zsh` Specific Dotfiles
 for file in ~/.sources/zsh/*; do
     source "$file"
 done
 
+# Antigen
 antigen apply
 
 # Antigen and oh-my-zsh can't seem to wrap their
