@@ -17,3 +17,5 @@
           ("Gemfile$" . ruby-mode)
           ("Capfile$" . ruby-mode)
           ("Guardfile$" . ruby-mode)))
+
+(use-package feature-mode)

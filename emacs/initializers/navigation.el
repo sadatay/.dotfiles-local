@@ -27,9 +27,10 @@
 ;; Glyphicons In Dired ;;
 ;; NOTE: Temporarily disabling icons. Hopefully disabling this
 ;; will speed things up and/or keep `emacs-plus' from crashing randomly
+;; EDIT: psych lets do this shit
 
-;; (use-package all-the-icons-dired
-;;   :after dired
-;;   :config
-;;   (add-hook 'dired-mode-hook 'all-the-icons-dired-mode)
-;;   (add-hook 'dired-mode-hook '(lambda () (dired-hide-details-mode 1))))
+(use-package all-the-icons-dired
+  :after dired
+  :config
+  (add-hook 'dired-mode-hook 'all-the-icons-dired-mode)
+  (add-hook 'dired-mode-hook '(lambda () (dired-hide-details-mode 1))))

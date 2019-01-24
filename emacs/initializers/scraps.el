@@ -2,6 +2,52 @@
 ;; Scraps/Snippets Sandbox  ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+;; UNUSED ;;
+
+;; (use-package moe-theme
+;; 	:config
+;; 	(moe-dark))
+
+;; FiraCode Ligatures ;;
+;; (when (find-font (font-spec :name "Fira Code"))
+;;   (add-to-list 'default-frame-alist '(font . "Fira Code-8"))
+;;   (set-face-attribute 'default t :font "Fira Code-8")
+
+;;   (let ((alist '((33 . ".\\(?:\\(?:==\\|!!\\)\\|[!=]\\)")
+;;                  (35 . ".\\(?:###\\|##\\|_(\\|[#(?[_{]\\)")
+;;                  (36 . ".\\(?:>\\)")
+;;                  (37 . ".\\(?:\\(?:%%\\)\\|%\\)")
+;;                  (38 . ".\\(?:\\(?:&&\\)\\|&\\)")
+;;                  (42 . ".\\(?:\\(?:\\*\\*/\\)\\|\\(?:\\*[*/]\\)\\|[*/>]\\)")
+;;                  (43 . ".\\(?:\\(?:\\+\\+\\)\\|[+>]\\)")
+;;                  (45 . ".\\(?:\\(?:-[>-]\\|<<\\|>>\\)\\|[<>}~-]\\)")
+;;                  (46 . ".\\(?:\\(?:\\.[.<]\\)\\|[.=-]\\)")
+;;                  (47 . ".\\(?:\\(?:\\*\\*\\|//\\|==\\)\\|[*/=>]\\)")
+;;                  (48 . ".\\(?:x[a-zA-Z]\\)")
+;;                  (58 . ".\\(?:::\\|[:=]\\)")
+;;                  (59 . ".\\(?:;;\\|;\\)")
+;;                  (60 . ".\\(?:\\(?:!--\\)\\|\\(?:~~\\|->\\|\\$>\\|\\*>\\|\\+>\\|--\\|<[<=-]\\|=[<=>]\\||>\\)\\|[*$+~/<=>|-]\\)")
+;;                  (61 . ".\\(?:\\(?:/=\\|:=\\|<<\\|=[=>]\\|>>\\)\\|[<=>~]\\)")
+;;                  (62 . ".\\(?:\\(?:=>\\|>[=>-]\\)\\|[=>-]\\)")
+;;                  (63 . ".\\(?:\\(\\?\\?\\)\\|[:=?]\\)")
+;;                  (91 . ".\\(?:]\\)")
+;;                  (92 . ".\\(?:\\(?:\\\\\\\\\\)\\|\\\\\\)")
+;;                  (94 . ".\\(?:=\\)")
+;;                  (119 . ".\\(?:ww\\)")
+;;                  (123 . ".\\(?:-\\)")
+;;                  (124 . ".\\(?:\\(?:|[=|]\\)\\|[=>|]\\)")
+;;                  (126 . ".\\(?:~>\\|~~\\|[>=@~-]\\)")
+;;                  )
+;;                ))
+;;     (dolist (char-regexp alist)
+;;       (set-char-table-range composition-function-table (car char-regexp)
+;;                             `([,(cdr char-regexp) 0 font-shape-gstring]))))
+
+;; Disable Firacode Ligatures In Helm ;;
+;; (add-hook 'helm-major-mode-hook
+  ;; (lambda ()
+;; (setq auto-composition-mode nil)))
+
 ;; Tramp ;;
 ;;------------
 ;; (use-package counsel-tramp
@@ -33,3 +79,38 @@
 ;; Ruby ;;
 ;;------------
 ;; (use-package rake)
+
+
+;; Config ;;
+;;------------
+;; Theme
+;; '(load-theme 'alect-dark t)
+;; '(frontmacs-theme 'gruvbox)
+;;------------
+;; Keybindings
+;;'(global-set-key (kbd "<s-return>") 'toggle-frame-maximized)
+;;'(global-set-key (kbd "<s-S-return>") 'toggle-frame-fullscreen)
+;;'(global-set-key (kbd "C-'") 'toggle-quotes)
+;;------------
+
+;;------------
+;; Projectile's file checks can become a burden for remote
+;; filesystems and/or while using TRAMP
+;; '(projectile-file-exists-remote-cache-expire nil)
+;; '(eval-after-load 'tramp '(setenv "SHELL" "/bin/bash"))
+;;------------
+;; '(add-to-list 'tramp-default-proxies-alist
+;;             '("nas\\.localdomain\\.lan\\'" "\\`root\\'" "/ssh:%h:"))
+;; '(add-to-list 'tramp-default-proxies-alist
+;;               '("nas'\\" "\\`root\\'" "/ssh:%h:"))
+
+;; Not sure what I was trying to do here...
+;; (use-package dash-functional)
+;; (use-package ov)
+;; (use-package s)
+;; (add-to-list 'load-path "~/.local/share/icons-in-terminal/")
+;;(add-to-list 'load-path "~/.emacs.d/vendor/font-lock-plus/")
+;;(add-to-list 'load-path "~/.emacs.d/vendor/sidebar.el/") ;
+;;(require 'sidebar)
+;;(global-set-key (kbd "C-x C-f") 'sidebar-open)
+;;(global-set-key (kbd "C-x C-a") 'sidebar-buffers-open)
