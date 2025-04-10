@@ -1,6 +1,6 @@
 [user]
 	name = Joe LaSala
-	email = joe@frontside.io
+	email = joe@nowsta.com
 [core]
 	editor = /usr/local/bin/emacsclient -t --alternate-editor=
 	pager = diff-so-fancy | less --tabs=4 -RFX
@@ -42,3 +42,8 @@
 	statusHints = false
 [status]
 	relativePaths = false
+[credential]
+  username = nowsta-joe
+	helper = osxkeychain
+[pull]
+	rebase = false

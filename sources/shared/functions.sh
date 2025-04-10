@@ -14,6 +14,16 @@
 #     done
 # }
 
+nv() {
+    npm version "$@" &&
+    cd src/client &&
+    client_version=$(npm version "$@") &&
+    cd - &&
+    git add src/client/package.json &&
+    git add src/client/package-lock.json &&
+    git commit -m "Client ${client_version}"
+}
+
 stash() {
     #TODO: like for git stash but for every file.  i.e. ~/code/misc rn
     echo "TODO"
