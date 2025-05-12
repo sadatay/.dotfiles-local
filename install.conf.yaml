@@ -13,10 +13,7 @@
     ~/scripts:
       create: true
       path: scripts
-    ~/.emacs.d:
-      create: true
-      path: emacs
-    ~/.doom.d
+    ~/.doom.d:
       create: true
       path: doom
     ~/.antigen: antigen/.antigen
