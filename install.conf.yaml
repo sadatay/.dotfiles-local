@@ -16,6 +16,9 @@
     ~/.emacs.d:
       create: true
       path: emacs
+    ~/.config/doom
+      create: true
+      path: doom
     ~/.antigen: antigen/.antigen
     ~/antigen.zsh: antigen/antigen/antigen.zsh
     ~/.bashrc: bash/.bashrc

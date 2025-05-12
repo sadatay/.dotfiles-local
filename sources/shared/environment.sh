@@ -4,10 +4,10 @@
 
 
 # Initialize NVM
-source ~/.nvm/nvm.sh
+# source ~/.nvm/nvm.sh
 
 # added by travis gem
-[ -f /Users/josephlasala/.travis/travis.sh ] && source /Users/josephlasala/.travis/travis.sh
+# [ # -f /Users/josephlasala/.travis/travis.sh ] && source /Users/josephlasala/.travis/travis.sh
 
 # Updates PATH for the Google Cloud SDK.
 if [ -f '/Users/josephlasala/google-cloud-sdk/path.zsh.inc' ]; then
@@ -35,9 +35,18 @@ export VISUAL=/usr/local/bin/emacsclient
 export ALTERNATE_EDITOR=/usr/local/bin/emacs
 
 # load RVM into a shell session *as a function*
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-export PATH=/usr/local/bin:$PATH
+# [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+# export PATH=/usr/local/bin:$PATH
 
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
+# export PATH="$PATH:$HOME/.rvm/bin"
+
+# Configure asdf
+export ASDF_DATA_DIR=$HOME/.asdf
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/bin:$PATH"
+
+# Asdf completions
+fpath=(${ASDF_DATA_DIR:-$HOME/.asdf}/completions $fpath)
+autoload -Uz compinit && compinit

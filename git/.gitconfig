@@ -1,6 +1,7 @@
 [user]
 	name = Joe LaSala
-	email = joe@nowsta.com
+	# email = joe@nowsta.com
+	email = jdlasala@gmail.com
 [core]
 	editor = /usr/local/bin/emacsclient -t --alternate-editor=
 	pager = diff-so-fancy | less --tabs=4 -RFX
@@ -21,21 +22,21 @@
 	new = green bold
 	whitespace = red reverse
 [alias]
-        pr = "!f() { git fetch origin +refs/pull/$1/head:pr/$1; } ; f"
-        rename-current-branch = "!f() { git branch -m $1; } ; f"
-        cut = "!f() {git remote update && git checkout -b $1 origin/master}; f"
-        gmaster = "!f() { git remote update ; git stash ; git checkout master ; git reset --hard origin/master; }; f"
-        fixup = "!f() { git add -u; git commit --amend } ; f"
+	pr = "!f() { git fetch origin +refs/pull/$1/head:pr/$1; } ; f"
+	rename-current-branch = "!f() { git branch -m $1; } ; f"
+	cut = "!f() {git remote update && git checkout -b $1 origin/master}; f"
+	gmaster = "!f() { git remote update ; git stash ; git checkout master ; git reset --hard origin/master; }; f"
+	fixup = "!f() { git add -u; git commit --amend } ; f"
 	lg = "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
-        stat = "!f() { git diff --stat; } ; f"
-        overview = "!f() { hr ; git show --oneline ; hr ; git status --short ; hr ; git diff --stat ; hr ; git diff --dirstat; hr;} ; f"
-        undo = 'git reset --soft HEAD~1'
-        trim = !git branch --merged | grep -v \"\\*\" | xargs -n 1 git branch -d
-        la = !echo "GIT ALIASES" && hr && git config --list | grep ^alias\\. | cut -c 7- | grep -Ei --color \"$1\" "#"
-        mergetest = "!f(){ git merge --no-commit --no-ff \"$1\"; git merge --abort; echo \"Merge aborted\"; };f "
-        hist = !git log -u
-        ours = "!f() { git co --ours $@ && git add $@; }; f"
-        theirs = "!f() { git co --theirs $@ && git add $@; }; f"
+	stat = "!f() { git diff --stat; } ; f"
+	overview = "!f() { hr ; git show --oneline ; hr ; git status --short ; hr ; git diff --stat ; hr ; git diff --dirstat; hr;} ; f"
+	undo = 'git reset --soft HEAD~1'
+	trim = !git branch --merged | grep -v \"\\*\" | xargs -n 1 git branch -d
+	la = !echo "GIT ALIASES" && hr && git config --list | grep ^alias\\. | cut -c 7- | grep -Ei --color \"$1\" "#"
+	mergetest = "!f(){ git merge --no-commit --no-ff \"$1\"; git merge --abort; echo \"Merge aborted\"; };f "
+	hist = !git log -u
+	ours = "!f() { git co --ours $@ && git add $@; }; f"
+	theirs = "!f() { git co --theirs $@ && git add $@; }; f"
 
 [advice]
 	pushNonFastForward = false
@@ -43,7 +44,8 @@
 [status]
 	relativePaths = false
 [credential]
-  username = nowsta-joe
+	# username = nowsta-joe
+	username = sadatay
 	helper = osxkeychain
 [pull]
 	rebase = false
